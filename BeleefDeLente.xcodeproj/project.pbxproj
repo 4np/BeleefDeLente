@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3A2FB281C9AD23200F55111 /* BeleefDeLenteView.h in Headers */ = {isa = PBXBuildFile; fileRef = F3A2FB271C9AD23200F55111 /* BeleefDeLenteView.h */; };
+		F3A2FB2A1C9AD23200F55111 /* BeleefDeLenteView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB291C9AD23200F55111 /* BeleefDeLenteView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F3A2FB241C9AD23200F55111 /* BeleefDeLente.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeleefDeLente.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A2FB271C9AD23200F55111 /* BeleefDeLenteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeleefDeLenteView.h; sourceTree = "<group>"; };
+		F3A2FB291C9AD23200F55111 /* BeleefDeLenteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeleefDeLenteView.m; sourceTree = "<group>"; };
+		F3A2FB2B1C9AD23200F55111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3A2FB201C9AD23200F55111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3A2FB1A1C9AD23200F55111 = {
+			isa = PBXGroup;
+			children = (
+				F3A2FB261C9AD23200F55111 /* BeleefDeLente */,
+				F3A2FB251C9AD23200F55111 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3A2FB251C9AD23200F55111 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3A2FB241C9AD23200F55111 /* BeleefDeLente.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3A2FB261C9AD23200F55111 /* BeleefDeLente */ = {
+			isa = PBXGroup;
+			children = (
+				F3A2FB271C9AD23200F55111 /* BeleefDeLenteView.h */,
+				F3A2FB291C9AD23200F55111 /* BeleefDeLenteView.m */,
+				F3A2FB2B1C9AD23200F55111 /* Info.plist */,
+			);
+			path = BeleefDeLente;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F3A2FB211C9AD23200F55111 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A2FB281C9AD23200F55111 /* BeleefDeLenteView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F3A2FB231C9AD23200F55111 /* BeleefDeLente */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3A2FB2E1C9AD23200F55111 /* Build configuration list for PBXNativeTarget "BeleefDeLente" */;
+			buildPhases = (
+				F3A2FB1F1C9AD23200F55111 /* Sources */,
+				F3A2FB201C9AD23200F55111 /* Frameworks */,
+				F3A2FB211C9AD23200F55111 /* Headers */,
+				F3A2FB221C9AD23200F55111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeleefDeLente;
+			productName = BeleefDeLente;
+			productReference = F3A2FB241C9AD23200F55111 /* BeleefDeLente.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3A2FB1B1C9AD23200F55111 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Jeroen Wesbeek";
+				TargetAttributes = {
+					F3A2FB231C9AD23200F55111 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F3A2FB1E1C9AD23200F55111 /* Build configuration list for PBXProject "BeleefDeLente" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3A2FB1A1C9AD23200F55111;
+			productRefGroup = F3A2FB251C9AD23200F55111 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3A2FB231C9AD23200F55111 /* BeleefDeLente */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3A2FB221C9AD23200F55111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3A2FB1F1C9AD23200F55111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A2FB2A1C9AD23200F55111 /* BeleefDeLenteView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F3A2FB2C1C9AD23200F55111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F3A2FB2D1C9AD23200F55111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F3A2FB2F1C9AD23200F55111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BeleefDeLente/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.osx.BeleefDeLente;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		F3A2FB301C9AD23200F55111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BeleefDeLente/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.osx.BeleefDeLente;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3A2FB1E1C9AD23200F55111 /* Build configuration list for PBXProject "BeleefDeLente" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3A2FB2C1C9AD23200F55111 /* Debug */,
+				F3A2FB2D1C9AD23200F55111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3A2FB2E1C9AD23200F55111 /* Build configuration list for PBXNativeTarget "BeleefDeLente" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3A2FB2F1C9AD23200F55111 /* Debug */,
+				F3A2FB301C9AD23200F55111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3A2FB1B1C9AD23200F55111 /* Project object */;
+}

@@ -10,12 +10,12 @@ import Foundation
 import ObjectMapper
 import AlamofireImage
 
-public class Pattern: Mappable, CustomDebugStringConvertible {
+public class Pattern: NSObject, Mappable, CustomDebugStringConvertible {
     public private(set) var name: String?
     public private(set) var pattern: String?
     
     // debug printable
-    public var debugDescription: String {
+    override public var debugDescription: String {
         get {
             let className = String(self.dynamicType)
             

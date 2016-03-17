@@ -11,13 +11,13 @@ import ObjectMapper
 import Alamofire
 import AlamofireImage
 
-public class Bird: Mappable, CustomDebugStringConvertible {
+public class Bird: NSObject, Mappable, CustomDebugStringConvertible {
     public private(set) var name: String?
     public private(set) var imageURL: NSURL?
     public private(set) var cameras: [Camera]?
     
     // debug printable
-    public var debugDescription: String {
+    override public var debugDescription: String {
         get {
             let className = String(self.dynamicType)
             

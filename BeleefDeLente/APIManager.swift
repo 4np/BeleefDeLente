@@ -12,7 +12,7 @@ import ObjectMapper
 import AlamofireObjectMapper
 import CleanroomLogger
 
-public class APIManager {
+public class APIManager: NSObject {
     public static let sharedInstance = APIManager()
     
     private let sourceURL = "https://gist.githubusercontent.com/4np/56f17ad63865bad9779c/raw/"

@@ -12,14 +12,14 @@
 		F3A2FB381C9AD4F900F55111 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB341C9AD4F900F55111 /* AlamofireImage.framework */; };
 		F3A2FB391C9AD4F900F55111 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB351C9AD4F900F55111 /* AlamofireObjectMapper.framework */; };
 		F3A2FB3A1C9AD4F900F55111 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB361C9AD4F900F55111 /* ObjectMapper.framework */; };
-		F3A2FB451C9AD66000F55111 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB3F1C9AD66000F55111 /* APIManager.swift */; };
-		F3A2FB461C9AD66000F55111 /* MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB401C9AD66000F55111 /* MetaData.swift */; };
-		F3A2FB471C9AD66000F55111 /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB411C9AD66000F55111 /* Confirmation.swift */; };
-		F3A2FB481C9AD66000F55111 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB421C9AD66000F55111 /* Pattern.swift */; };
-		F3A2FB491C9AD66000F55111 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB431C9AD66000F55111 /* Bird.swift */; };
-		F3A2FB4A1C9AD66000F55111 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB441C9AD66000F55111 /* Camera.swift */; };
 		F3A2FB4E1C9AD6ED00F55111 /* CleanroomASL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB4C1C9AD6ED00F55111 /* CleanroomASL.framework */; };
 		F3A2FB4F1C9AD6ED00F55111 /* CleanroomLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB4D1C9AD6ED00F55111 /* CleanroomLogger.framework */; };
+		F3A2FB641C9ADB9300F55111 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB5E1C9ADB9300F55111 /* APIManager.swift */; };
+		F3A2FB651C9ADB9300F55111 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB5F1C9ADB9300F55111 /* Bird.swift */; };
+		F3A2FB661C9ADB9300F55111 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB601C9ADB9300F55111 /* Camera.swift */; };
+		F3A2FB671C9ADB9300F55111 /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB611C9ADB9300F55111 /* Confirmation.swift */; };
+		F3A2FB681C9ADB9300F55111 /* MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB621C9ADB9300F55111 /* MetaData.swift */; };
+		F3A2FB691C9ADB9300F55111 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB631C9ADB9300F55111 /* Pattern.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,14 +30,14 @@
 		F3A2FB341C9AD4F900F55111 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/Mac/AlamofireImage.framework; sourceTree = "<group>"; };
 		F3A2FB351C9AD4F900F55111 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/Mac/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		F3A2FB361C9AD4F900F55111 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/Mac/ObjectMapper.framework; sourceTree = "<group>"; };
-		F3A2FB3F1C9AD66000F55111 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		F3A2FB401C9AD66000F55111 /* MetaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaData.swift; sourceTree = "<group>"; };
-		F3A2FB411C9AD66000F55111 /* Confirmation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
-		F3A2FB421C9AD66000F55111 /* Pattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
-		F3A2FB431C9AD66000F55111 /* Bird.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
-		F3A2FB441C9AD66000F55111 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		F3A2FB4C1C9AD6ED00F55111 /* CleanroomASL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CleanroomASL.framework; path = Carthage/Build/Mac/CleanroomASL.framework; sourceTree = "<group>"; };
 		F3A2FB4D1C9AD6ED00F55111 /* CleanroomLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CleanroomLogger.framework; path = Carthage/Build/Mac/CleanroomLogger.framework; sourceTree = "<group>"; };
+		F3A2FB5E1C9ADB9300F55111 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F3A2FB5F1C9ADB9300F55111 /* Bird.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		F3A2FB601C9ADB9300F55111 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		F3A2FB611C9ADB9300F55111 /* Confirmation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
+		F3A2FB621C9ADB9300F55111 /* MetaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaData.swift; sourceTree = "<group>"; };
+		F3A2FB631C9ADB9300F55111 /* Pattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,12 @@
 		F3A2FB4B1C9AD66500F55111 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				F3A2FB3F1C9AD66000F55111 /* APIManager.swift */,
-				F3A2FB401C9AD66000F55111 /* MetaData.swift */,
-				F3A2FB411C9AD66000F55111 /* Confirmation.swift */,
-				F3A2FB421C9AD66000F55111 /* Pattern.swift */,
-				F3A2FB431C9AD66000F55111 /* Bird.swift */,
-				F3A2FB441C9AD66000F55111 /* Camera.swift */,
+				F3A2FB5E1C9ADB9300F55111 /* APIManager.swift */,
+				F3A2FB5F1C9ADB9300F55111 /* Bird.swift */,
+				F3A2FB601C9ADB9300F55111 /* Camera.swift */,
+				F3A2FB611C9ADB9300F55111 /* Confirmation.swift */,
+				F3A2FB621C9ADB9300F55111 /* MetaData.swift */,
+				F3A2FB631C9ADB9300F55111 /* Pattern.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -226,13 +226,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3A2FB451C9AD66000F55111 /* APIManager.swift in Sources */,
-				F3A2FB481C9AD66000F55111 /* Pattern.swift in Sources */,
+				F3A2FB661C9ADB9300F55111 /* Camera.swift in Sources */,
+				F3A2FB641C9ADB9300F55111 /* APIManager.swift in Sources */,
+				F3A2FB681C9ADB9300F55111 /* MetaData.swift in Sources */,
+				F3A2FB671C9ADB9300F55111 /* Confirmation.swift in Sources */,
+				F3A2FB651C9ADB9300F55111 /* Bird.swift in Sources */,
+				F3A2FB691C9ADB9300F55111 /* Pattern.swift in Sources */,
 				F3A2FB321C9AD33300F55111 /* BeleefDeLenteView.swift in Sources */,
-				F3A2FB471C9AD66000F55111 /* Confirmation.swift in Sources */,
-				F3A2FB491C9AD66000F55111 /* Bird.swift in Sources */,
-				F3A2FB4A1C9AD66000F55111 /* Camera.swift in Sources */,
-				F3A2FB461C9AD66000F55111 /* MetaData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,8 @@
 # Beleef De Lente Screensaver
 
+A [Beleef De Lente](http://www.beleefdelente.nl/) (_experience Spring_) screensaver for Mac OS X that will randomly display a live feed from a bird nest.
 
-A [Beleef De Lente](http://www.beleefdelente.nl/) screensaver for Mac OS X that will randomly display a live feed from a bird nest.
+![beleefdelente](https://cloud.githubusercontent.com/assets/1049693/13851733/822b045c-ec5f-11e5-8f8c-80db2b8bb3ce.png)
 
 ### [Download the latest release](https://github.com/4np/BeleefDeLente/releases/latest)
 

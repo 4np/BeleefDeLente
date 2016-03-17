@@ -14,18 +14,24 @@ import CleanroomLogger
 
 @objc(BeleefDeLenteView) class BeleefDeLenteView: ScreenSaverView {
     static var birds: [Bird]?
+    private var player: AVPlayer?
     
     override init?(frame: NSRect, isPreview: Bool) {
         super.init(frame: frame, isPreview: isPreview)
-        
-        // fetch birds
-        fetchBirds() { [weak self] birds in
-            self?.playRandomly(birds)
-        }
+        playRandomly()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    deinit {
+        Log.debug?.message("deinitializing BeleefDeLente")
+        
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+        
+        self.player?.rate = 0
+        self.player?.replaceCurrentItemWithPlayerItem(nil)
     }
     
     //MARK: Networking
@@ -51,6 +57,17 @@ import CleanroomLogger
     }
     
     //MARK: Get a random bird and camera
+    
+    private func playRandomly() {
+        guard let birds = BeleefDeLenteView.birds else {
+            fetchBirds() { [weak self] birds in
+               self?.playRandomly(birds)
+            }
+            return
+        }
+        
+        playRandomly(birds)
+    }
     
     private func playRandomly(birds: [Bird]) {
         let bird = birds[Int(arc4random_uniform(UInt32(birds.count)))]
@@ -107,6 +124,8 @@ import CleanroomLogger
         
         // set up player
         let player = AVPlayer(URL: url)
+        self.player = player
+        
         let playerLayer = AVPlayerLayer(player: player)
         if #available(OSX 10.10, *) {
             playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
@@ -131,5 +150,25 @@ import CleanroomLogger
         notificationCenter.addObserver(self, selector: "playerItemFailedtoPlayToEnd:", name: AVPlayerItemFailedToPlayToEndTimeNotification, object: currentItem)
         notificationCenter.addObserver(self, selector: "playerItemPlaybackStalledNotification:", name: AVPlayerItemPlaybackStalledNotification, object: currentItem)
         player.actionAtItemEnd = AVPlayerActionAtItemEnd.None
+    }
+    
+    //MARK: Notifications
+    
+    func playerItemFailedtoPlayToEnd(aNotification: NSNotification) {
+        Log.error?.message("player failed to play to end time (\(aNotification))")
+        playRandomly()
+    }
+    
+    func playerItemNewErrorLogEntryNotification(aNotification: NSNotification) {
+        Log.error?.message("player error (\(aNotification))")
+    }
+    
+    func playerItemPlaybackStalledNotification(aNotification: NSNotification) {
+        Log.error?.message("playerback stalled (\(aNotification))")
+    }
+    
+    func playerItemDidReachEnd(aNotification: NSNotification) {
+        Log.error?.message("playback reached the end (\(aNotification))")
+        playRandomly()
     }
 }

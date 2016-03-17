@@ -1,0 +1,5 @@
+github "Alamofire/Alamofire"
+github "Alamofire/AlamofireImage"
+github "Hearst-DD/ObjectMapper"
+github "4np/AlamofireObjectMapper"
+github "emaloney/CleanroomLogger"

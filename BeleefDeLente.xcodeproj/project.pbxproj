@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F31AE0711C9AEDCB00062DF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31AE0701C9AEDCB00062DF3 /* AppDelegate.swift */; };
+		F31AE0731C9AEDCB00062DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AE0721C9AEDCB00062DF3 /* Assets.xcassets */; };
+		F31AE0761C9AEDCB00062DF3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F31AE0741C9AEDCB00062DF3 /* MainMenu.xib */; };
+		F31AE07B1C9AEE7600062DF3 /* BeleefDeLenteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB311C9AD33300F55111 /* BeleefDeLenteView.swift */; };
+		F31AE07C1C9AEE8100062DF3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB5E1C9ADB9300F55111 /* APIManager.swift */; };
+		F31AE07D1C9AEE8100062DF3 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB5F1C9ADB9300F55111 /* Bird.swift */; };
+		F31AE07E1C9AEE8100062DF3 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB601C9ADB9300F55111 /* Camera.swift */; };
+		F31AE07F1C9AEE8100062DF3 /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB611C9ADB9300F55111 /* Confirmation.swift */; };
+		F31AE0801C9AEE8100062DF3 /* MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB621C9ADB9300F55111 /* MetaData.swift */; };
+		F31AE0811C9AEE8100062DF3 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB631C9ADB9300F55111 /* Pattern.swift */; };
+		F31AE0861C9AEF5400062DF3 /* CleanroomASL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB4C1C9AD6ED00F55111 /* CleanroomASL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F31AE0881C9AEF5400062DF3 /* CleanroomLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB4D1C9AD6ED00F55111 /* CleanroomLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F31AE08A1C9AEF5400062DF3 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB331C9AD4F900F55111 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F31AE08C1C9AEF5400062DF3 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB341C9AD4F900F55111 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F31AE08E1C9AEF5400062DF3 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB351C9AD4F900F55111 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F31AE0901C9AEF5400062DF3 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB361C9AD4F900F55111 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F31AE0951C9AF99F00062DF3 /* Array+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31AE0941C9AF99F00062DF3 /* Array+Random.swift */; };
 		F3A2FB321C9AD33300F55111 /* BeleefDeLenteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB311C9AD33300F55111 /* BeleefDeLenteView.swift */; };
 		F3A2FB371C9AD4F900F55111 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB331C9AD4F900F55111 /* Alamofire.framework */; };
 		F3A2FB381C9AD4F900F55111 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB341C9AD4F900F55111 /* AlamofireImage.framework */; };
@@ -22,7 +39,32 @@
 		F3A2FB691C9ADB9300F55111 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB631C9ADB9300F55111 /* Pattern.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F31AE0911C9AEF5400062DF3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F31AE0901C9AEF5400062DF3 /* ObjectMapper.framework in Embed Frameworks */,
+				F31AE0861C9AEF5400062DF3 /* CleanroomASL.framework in Embed Frameworks */,
+				F31AE08A1C9AEF5400062DF3 /* Alamofire.framework in Embed Frameworks */,
+				F31AE0881C9AEF5400062DF3 /* CleanroomLogger.framework in Embed Frameworks */,
+				F31AE08E1C9AEF5400062DF3 /* AlamofireObjectMapper.framework in Embed Frameworks */,
+				F31AE08C1C9AEF5400062DF3 /* AlamofireImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F31AE06E1C9AEDCB00062DF3 /* BeleefDeLenteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeleefDeLenteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31AE0701C9AEDCB00062DF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F31AE0721C9AEDCB00062DF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F31AE0751C9AEDCB00062DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F31AE0771C9AEDCB00062DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F31AE0941C9AF99F00062DF3 /* Array+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Random.swift"; sourceTree = "<group>"; };
 		F3A2FB241C9AD23200F55111 /* BeleefDeLente.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeleefDeLente.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A2FB2B1C9AD23200F55111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3A2FB311C9AD33300F55111 /* BeleefDeLenteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeleefDeLenteView.swift; sourceTree = "<group>"; };
@@ -41,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F31AE06B1C9AEDCB00062DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3A2FB201C9AD23200F55111 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,10 +106,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F31AE06F1C9AEDCB00062DF3 /* BeleefDeLenteApp */ = {
+			isa = PBXGroup;
+			children = (
+				F31AE0701C9AEDCB00062DF3 /* AppDelegate.swift */,
+				F31AE0721C9AEDCB00062DF3 /* Assets.xcassets */,
+				F31AE0741C9AEDCB00062DF3 /* MainMenu.xib */,
+				F31AE0771C9AEDCB00062DF3 /* Info.plist */,
+			);
+			path = BeleefDeLenteApp;
+			sourceTree = "<group>";
+		};
 		F3A2FB1A1C9AD23200F55111 = {
 			isa = PBXGroup;
 			children = (
 				F3A2FB3B1C9AD4FE00F55111 /* Frameworks */,
+				F31AE06F1C9AEDCB00062DF3 /* BeleefDeLenteApp */,
 				F3A2FB261C9AD23200F55111 /* BeleefDeLente */,
 				F3A2FB251C9AD23200F55111 /* Products */,
 			);
@@ -70,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				F3A2FB241C9AD23200F55111 /* BeleefDeLente.saver */,
+				F31AE06E1C9AEDCB00062DF3 /* BeleefDeLenteApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				F3A2FB2B1C9AD23200F55111 /* Info.plist */,
+				F31AE0941C9AF99F00062DF3 /* Array+Random.swift */,
 				F3A2FB311C9AD33300F55111 /* BeleefDeLenteView.swift */,
 				F3A2FB4B1C9AD66500F55111 /* API */,
 			);
@@ -123,6 +186,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		F31AE06D1C9AEDCB00062DF3 /* BeleefDeLenteApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F31AE07A1C9AEDCB00062DF3 /* Build configuration list for PBXNativeTarget "BeleefDeLenteApp" */;
+			buildPhases = (
+				F31AE06A1C9AEDCB00062DF3 /* Sources */,
+				F31AE06B1C9AEDCB00062DF3 /* Frameworks */,
+				F31AE06C1C9AEDCB00062DF3 /* Resources */,
+				F31AE0831C9AEEBE00062DF3 /* Carthage */,
+				F31AE0841C9AEF2900062DF3 /* Swiftlint */,
+				F31AE0911C9AEF5400062DF3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeleefDeLenteApp;
+			productName = BeleefDeLenteApp;
+			productReference = F31AE06E1C9AEDCB00062DF3 /* BeleefDeLenteApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F3A2FB231C9AD23200F55111 /* BeleefDeLente */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3A2FB2E1C9AD23200F55111 /* Build configuration list for PBXNativeTarget "BeleefDeLente" */;
@@ -149,9 +232,13 @@
 		F3A2FB1B1C9AD23200F55111 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Jeroen Wesbeek";
 				TargetAttributes = {
+					F31AE06D1C9AEDCB00062DF3 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					F3A2FB231C9AD23200F55111 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -163,6 +250,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = F3A2FB1A1C9AD23200F55111;
 			productRefGroup = F3A2FB251C9AD23200F55111 /* Products */;
@@ -170,11 +258,21 @@
 			projectRoot = "";
 			targets = (
 				F3A2FB231C9AD23200F55111 /* BeleefDeLente */,
+				F31AE06D1C9AEDCB00062DF3 /* BeleefDeLenteApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F31AE06C1C9AEDCB00062DF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31AE0731C9AEDCB00062DF3 /* Assets.xcassets in Resources */,
+				F31AE0761C9AEDCB00062DF3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3A2FB221C9AD23200F55111 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +283,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		F31AE0831C9AEEBE00062DF3 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/CleanroomASL.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/CleanroomLogger.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/AlamofireImage.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/AlamofireObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/ObjectMapper.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		F31AE0841C9AEF2900062DF3 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		F3A2FB3C1C9AD56400F55111 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,10 +354,26 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F31AE06A1C9AEDCB00062DF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31AE07C1C9AEE8100062DF3 /* APIManager.swift in Sources */,
+				F31AE07D1C9AEE8100062DF3 /* Bird.swift in Sources */,
+				F31AE07E1C9AEE8100062DF3 /* Camera.swift in Sources */,
+				F31AE07F1C9AEE8100062DF3 /* Confirmation.swift in Sources */,
+				F31AE0801C9AEE8100062DF3 /* MetaData.swift in Sources */,
+				F31AE0811C9AEE8100062DF3 /* Pattern.swift in Sources */,
+				F31AE07B1C9AEE7600062DF3 /* BeleefDeLenteView.swift in Sources */,
+				F31AE0711C9AEDCB00062DF3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3A2FB1F1C9AD23200F55111 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F31AE0951C9AF99F00062DF3 /* Array+Random.swift in Sources */,
 				F3A2FB661C9ADB9300F55111 /* Camera.swift in Sources */,
 				F3A2FB641C9ADB9300F55111 /* APIManager.swift in Sources */,
 				F3A2FB681C9ADB9300F55111 /* MetaData.swift in Sources */,
@@ -238,7 +386,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		F31AE0741C9AEDCB00062DF3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F31AE0751C9AEDCB00062DF3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		F31AE0781C9AEDCB00062DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = BeleefDeLenteApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.osx.BeleefDeLenteApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F31AE0791C9AEDCB00062DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = BeleefDeLenteApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eu.osx.BeleefDeLenteApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F3A2FB2C1C9AD23200F55111 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -360,6 +552,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F31AE07A1C9AEDCB00062DF3 /* Build configuration list for PBXNativeTarget "BeleefDeLenteApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F31AE0781C9AEDCB00062DF3 /* Debug */,
+				F31AE0791C9AEDCB00062DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F3A2FB1E1C9AD23200F55111 /* Build configuration list for PBXProject "BeleefDeLente" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -376,6 +576,7 @@
 				F3A2FB301C9AD23200F55111 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

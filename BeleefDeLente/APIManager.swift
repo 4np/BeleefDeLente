@@ -15,7 +15,8 @@ import CleanroomLogger
 public class APIManager: NSObject {
     public static let sharedInstance = APIManager()
     
-    private let sourceURL = "https://gist.githubusercontent.com/4np/56f17ad63865bad9779c/raw/"
+    // Beleef De Lente Screensaver JSON
+    private let sourceURL = "https://gist.githubusercontent.com/4np/837535fdb7f577bb0c03/raw/"
     
     //MARK: Meta data
     

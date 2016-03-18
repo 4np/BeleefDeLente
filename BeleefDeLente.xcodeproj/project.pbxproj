@@ -24,6 +24,10 @@
 		F31AE08E1C9AEF5400062DF3 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB351C9AD4F900F55111 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F31AE0901C9AEF5400062DF3 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB361C9AD4F900F55111 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F31AE0971C9AFCAC00062DF3 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F31AE0961C9AFCAC00062DF3 /* thumbnail.png */; };
+		F33622501C9C09DB00BFB776 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = F336224F1C9C09DB00BFB776 /* Version.swift */; };
+		F33622511C9C0B7900BFB776 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = F336224F1C9C09DB00BFB776 /* Version.swift */; };
+		F33622521C9C1ACA00BFB776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31AE0721C9AEDCB00062DF3 /* Assets.xcassets */; };
+		F33622531C9C1C1E00BFB776 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = F31AE0721C9AEDCB00062DF3 /* Assets.xcassets */; };
 		F3A2FB321C9AD33300F55111 /* BeleefDeLenteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2FB311C9AD33300F55111 /* BeleefDeLenteView.swift */; };
 		F3A2FB371C9AD4F900F55111 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB331C9AD4F900F55111 /* Alamofire.framework */; };
 		F3A2FB381C9AD4F900F55111 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2FB341C9AD4F900F55111 /* AlamofireImage.framework */; };
@@ -61,10 +65,11 @@
 /* Begin PBXFileReference section */
 		F31AE06E1C9AEDCB00062DF3 /* BeleefDeLenteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeleefDeLenteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31AE0701C9AEDCB00062DF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F31AE0721C9AEDCB00062DF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F31AE0721C9AEDCB00062DF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = BeleefDeLenteApp/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		F31AE0751C9AEDCB00062DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F31AE0771C9AEDCB00062DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F31AE0961C9AFCAC00062DF3 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		F336224F1C9C09DB00BFB776 /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		F3A2FB241C9AD23200F55111 /* BeleefDeLente.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeleefDeLente.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A2FB2B1C9AD23200F55111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3A2FB311C9AD33300F55111 /* BeleefDeLenteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeleefDeLenteView.swift; sourceTree = "<group>"; };
@@ -110,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				F31AE0701C9AEDCB00062DF3 /* AppDelegate.swift */,
-				F31AE0721C9AEDCB00062DF3 /* Assets.xcassets */,
 				F31AE0741C9AEDCB00062DF3 /* MainMenu.xib */,
 				F31AE0771C9AEDCB00062DF3 /* Info.plist */,
 			);
@@ -139,6 +143,7 @@
 		F3A2FB261C9AD23200F55111 /* BeleefDeLente */ = {
 			isa = PBXGroup;
 			children = (
+				F31AE0721C9AEDCB00062DF3 /* Assets.xcassets */,
 				F31AE0961C9AFCAC00062DF3 /* thumbnail.png */,
 				F3A2FB2B1C9AD23200F55111 /* Info.plist */,
 				F3A2FB311C9AD33300F55111 /* BeleefDeLenteView.swift */,
@@ -169,6 +174,7 @@
 				F3A2FB611C9ADB9300F55111 /* Confirmation.swift */,
 				F3A2FB621C9ADB9300F55111 /* MetaData.swift */,
 				F3A2FB631C9ADB9300F55111 /* Pattern.swift */,
+				F336224F1C9C09DB00BFB776 /* Version.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33622521C9C1ACA00BFB776 /* Assets.xcassets in Resources */,
 				F31AE0971C9AFCAC00062DF3 /* thumbnail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +374,7 @@
 				F31AE0811C9AEE8100062DF3 /* Pattern.swift in Sources */,
 				F31AE07B1C9AEE7600062DF3 /* BeleefDeLenteView.swift in Sources */,
 				F31AE0711C9AEDCB00062DF3 /* AppDelegate.swift in Sources */,
+				F33622511C9C0B7900BFB776 /* Version.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33622531C9C1C1E00BFB776 /* Assets.xcassets in Sources */,
 				F3A2FB661C9ADB9300F55111 /* Camera.swift in Sources */,
 				F3A2FB641C9ADB9300F55111 /* APIManager.swift in Sources */,
 				F3A2FB681C9ADB9300F55111 /* MetaData.swift in Sources */,
@@ -381,6 +390,7 @@
 				F3A2FB651C9ADB9300F55111 /* Bird.swift in Sources */,
 				F3A2FB691C9ADB9300F55111 /* Pattern.swift in Sources */,
 				F3A2FB321C9AD33300F55111 /* BeleefDeLenteView.swift in Sources */,
+				F33622501C9C09DB00BFB776 /* Version.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +523,7 @@
 		F3A2FB2F1C9AD23200F55111 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -533,6 +544,7 @@
 		F3A2FB301C9AD23200F55111 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -559,6 +571,7 @@
 				F31AE0791C9AEDCB00062DF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3A2FB1E1C9AD23200F55111 /* Build configuration list for PBXProject "BeleefDeLente" */ = {
 			isa = XCConfigurationList;

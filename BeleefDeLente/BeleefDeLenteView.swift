@@ -12,12 +12,16 @@ import AVKit
 import AVFoundation
 import CleanroomLogger
 
-@objc(BeleefDeLenteView) class BeleefDeLenteView: ScreenSaverView {
+@objc(BeleefDeLenteView) class BeleefDeLenteView: ScreenSaverView, NSUserNotificationCenterDelegate {
     static var birds: [Bird]?
     private var player: AVPlayer?
     
     override init?(frame: NSRect, isPreview: Bool) {
         super.init(frame: frame, isPreview: isPreview)
+        
+        // get the latest version
+        checkForNewerVersion()
+        
         playRandomly()
     }
     
@@ -34,6 +38,49 @@ import CleanroomLogger
         self.player?.replaceCurrentItemWithPlayerItem(nil)
     }
     
+    //MARK: Newer version available?
+    
+    private func checkForNewerVersion() {
+        APIManager.sharedInstance.getVersion() { version, error in
+            guard let latestVersionString = version?.latest, currentVersionString = NSBundle.mainBundle().infoDictionary?["CFBundleShortVersionString"] as? String else {
+                Log.error?.message("could not get latest version")
+                return
+            }
+            
+            func versionToArray(version: String) -> [Int] {
+                return version.componentsSeparatedByString(".").map { Int($0) ?? 0 }
+            }
+            
+            let latestVersion = versionToArray(latestVersionString)
+            let currentVersion = versionToArray(currentVersionString)
+            
+            // check there is a newer version available
+            if currentVersion.lexicographicalCompare(latestVersion) {
+                let notification = NSUserNotification()
+                notification.title = "Beleef De Lente Screensaver"
+                notification.subtitle = "Nieuwere versie van de screensaver beschikbaar"
+                notification.informativeText = "U wordt verzocht de vernieuwde versie van de 'Beleef De Lente' screensaver te installeren."
+                notification.soundName = NSUserNotificationDefaultSoundName
+
+                let center = NSUserNotificationCenter.defaultUserNotificationCenter()
+                center.delegate = self
+                center.deliverNotification(notification)
+            }
+        }
+    }
+    
+    func userNotificationCenter(center: NSUserNotificationCenter, didActivateNotification notification: NSUserNotification) {
+        guard let url = NSURL(string: "https://github.com/4np/BeleefDeLente/releases/latest") else {
+            return
+        }
+        
+        // remove displayed notification(s)
+        NSUserNotificationCenter.defaultUserNotificationCenter().removeAllDeliveredNotifications()
+        
+        // launch url in browser
+        NSWorkspace.sharedWorkspace().openURL(url)
+    }
+
     //MARK: Networking
     
     private func fetchBirds(withCompletion completed: (birds: [Bird]) -> () = { birds in }) {

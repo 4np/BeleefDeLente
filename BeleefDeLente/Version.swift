@@ -1,8 +1,8 @@
 //
-//  MetaData.swift
+//  Version.swift
 //  BeleefDeLente
 //
-//  Created by Jeroen Wesbeek on 3/16/16.
+//  Created by Jeroen Wesbeek on 3/18/16.
 //  Copyright © 2016 Jeroen Wesbeek. All rights reserved.
 //
 
@@ -10,10 +10,8 @@ import Foundation
 import ObjectMapper
 import AlamofireImage
 
-public class MetaData: NSObject, Mappable, CustomDebugStringConvertible {
-    public private(set) var version: Version?
-    public private(set) var confirmation: Confirmation?
-    public private(set) var birds: [Bird]?
+public class Version: NSObject, Mappable, CustomDebugStringConvertible {
+    public private(set) var latest: String?
     
     // debug printable
     override public var debugDescription: String {
@@ -32,8 +30,6 @@ public class MetaData: NSObject, Mappable, CustomDebugStringConvertible {
     }
     
     public func mapping(map: Map) {
-        version <- map["version"]
-        confirmation <- map["confirmation"]
-        birds <- map["birds"]
+        latest <- map["latest"]
     }
 }

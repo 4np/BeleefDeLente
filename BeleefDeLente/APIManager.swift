@@ -32,6 +32,19 @@ public class APIManager: NSObject {
             }
     }
     
+    //MARK: Check for update
+    
+    public func getVersion(withCompletion completed: (version: Version?, error: String?) -> () = { version, error in }) {
+        getMetaData() { metaData, error in
+            guard let version = metaData?.version else {
+                completed(version: nil, error: "could not fetch version")
+                return
+            }
+            
+            completed(version: version, error: nil)
+        }
+    }
+    
     //MARK: Birds
     
     public func getBirds(withCompletion completed: (birds: [Bird]?, error: String?) -> () = { birds, error in }) {

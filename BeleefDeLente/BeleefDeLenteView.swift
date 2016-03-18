@@ -13,6 +13,7 @@ import AVFoundation
 import CleanroomLogger
 
 @objc(BeleefDeLenteView) class BeleefDeLenteView: ScreenSaverView, NSUserNotificationCenterDelegate {
+    static var currentVersion = "1.0"
     static var birds: [Bird]?
     private var player: AVPlayer?
     
@@ -42,7 +43,7 @@ import CleanroomLogger
     
     private func checkForNewerVersion() {
         APIManager.sharedInstance.getVersion() { version, error in
-            guard let latestVersionString = version?.latest, currentVersionString = NSBundle.mainBundle().infoDictionary?["CFBundleShortVersionString"] as? String else {
+            guard let latestVersionString = version?.latest else {
                 Log.error?.message("could not get latest version")
                 return
             }
@@ -52,14 +53,16 @@ import CleanroomLogger
             }
             
             let latestVersion = versionToArray(latestVersionString)
-            let currentVersion = versionToArray(currentVersionString)
+            let currentVersion = versionToArray(BeleefDeLenteView.currentVersion)
             
             // check there is a newer version available
             if currentVersion.lexicographicalCompare(latestVersion) {
+                Log.error?.message("newer version (\(latestVersionString)) available at https://github.com/4np/BeleefDeLente/releases/latest (currently installed: \(BeleefDeLenteView.currentVersion))")
+
                 let notification = NSUserNotification()
                 notification.title = "Beleef De Lente Screensaver"
                 notification.subtitle = "Nieuwere versie van de screensaver beschikbaar"
-                notification.informativeText = "U wordt verzocht de vernieuwde versie van de 'Beleef De Lente' screensaver te installeren."
+                notification.informativeText = "U wordt verzocht de vernieuwde versie van de 'Beleef De Lente' screensaver te installeren. \(BeleefDeLenteView.currentVersion) -- \(latestVersionString)"
                 notification.soundName = NSUserNotificationDefaultSoundName
 
                 let center = NSUserNotificationCenter.defaultUserNotificationCenter()
@@ -67,6 +70,10 @@ import CleanroomLogger
                 center.deliverNotification(notification)
             }
         }
+    }
+    
+    func userNotificationCenter(center: NSUserNotificationCenter, shouldPresentNotification notification: NSUserNotification) -> Bool {
+        return true
     }
     
     func userNotificationCenter(center: NSUserNotificationCenter, didActivateNotification notification: NSUserNotification) {

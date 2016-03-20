@@ -37,34 +37,4 @@ public class Bird: NSObject, Mappable, CustomDebugStringConvertible {
         imageURL <- (map["image"], URLTransform())
         cameras <- map["cameras"]
     }
-    
-//    //MARK: Image
-//    
-//    public func imageWithCompletion(completed: (image: UIImage?, error: String?) -> () = { image, error in }) {
-//        guard let imageURL = imageURL else {
-//            return completed(image: nil, error: "no image url for '\(name ?? "unknown bird")'")
-//        }
-//        
-//        Alamofire.request(.GET, imageURL)
-//            .responseImage { response in
-//                guard let image = response.result.value else {
-//                    return completed(image: nil, error: "error fetching image from \(imageURL)")
-//                }
-//                
-//                completed(image: image, error: nil)
-//            }
-//    }
-//    
-//    public func scaledImageWithCompletion(ofSize size: CGSize, completed: (image: UIImage?, error: String?) -> () = { image, error in }) {
-//        imageWithCompletion() { image, error in
-//            guard let image = image else {
-//                completed(image: nil, error: error)
-//                return
-//            }
-//            
-//            // scale image
-//            let imageFilter = AspectScaledToFillSizeFilter(size: size)
-//            completed(image: imageFilter.filter(image), error: nil)
-//        }
-//    }
 }

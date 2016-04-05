@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 import AlamofireImage
 
-public class Pattern: NSObject, Mappable, CustomDebugStringConvertible {
+public class Pattern: NSObject, Mappable {
     public private(set) var name: String?
     public private(set) var pattern: String?
     

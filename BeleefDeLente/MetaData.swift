@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 import AlamofireImage
 
-public class MetaData: NSObject, Mappable, CustomDebugStringConvertible {
+public class MetaData: NSObject, Mappable {
     public private(set) var version: Version?
     public private(set) var confirmation: Confirmation?
     public private(set) var birds: [Bird]?

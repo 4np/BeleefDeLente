@@ -11,7 +11,7 @@ import ObjectMapper
 import Alamofire
 import AlamofireImage
 
-public class Bird: NSObject, Mappable, CustomDebugStringConvertible {
+public class Bird: NSObject, Mappable {
     public private(set) var name: String?
     public private(set) var imageURL: NSURL?
     public private(set) var cameras: [Camera]?

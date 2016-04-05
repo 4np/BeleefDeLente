@@ -178,12 +178,11 @@ import CleanroomLogger
         
         // set up player
         let player = AVPlayer(URL: url)
+        player.volume = 0
         self.player = player
         
         let playerLayer = AVPlayerLayer(player: player)
-        if #available(OSX 10.10, *) {
-            playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
-        }
+        playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
         playerLayer.autoresizingMask = [CAAutoresizingMask.LayerWidthSizable, CAAutoresizingMask.LayerHeightSizable]
         playerLayer.frame = layer.bounds
         
@@ -199,10 +198,10 @@ import CleanroomLogger
             return
         }
         
-        notificationCenter.addObserver(self, selector: "playerItemDidReachEnd:", name: AVPlayerItemDidPlayToEndTimeNotification, object: currentItem)
-        notificationCenter.addObserver(self, selector: "playerItemNewErrorLogEntryNotification:", name: AVPlayerItemNewErrorLogEntryNotification, object: currentItem)
-        notificationCenter.addObserver(self, selector: "playerItemFailedtoPlayToEnd:", name: AVPlayerItemFailedToPlayToEndTimeNotification, object: currentItem)
-        notificationCenter.addObserver(self, selector: "playerItemPlaybackStalledNotification:", name: AVPlayerItemPlaybackStalledNotification, object: currentItem)
+        notificationCenter.addObserver(self, selector: #selector(BeleefDeLenteView.playerItemDidReachEnd(_:)), name: AVPlayerItemDidPlayToEndTimeNotification, object: currentItem)
+        notificationCenter.addObserver(self, selector: #selector(BeleefDeLenteView.playerItemNewErrorLogEntryNotification(_:)), name: AVPlayerItemNewErrorLogEntryNotification, object: currentItem)
+        notificationCenter.addObserver(self, selector: #selector(BeleefDeLenteView.playerItemFailedtoPlayToEnd(_:)), name: AVPlayerItemFailedToPlayToEndTimeNotification, object: currentItem)
+        notificationCenter.addObserver(self, selector: #selector(BeleefDeLenteView.playerItemPlaybackStalledNotification(_:)), name: AVPlayerItemPlaybackStalledNotification, object: currentItem)
         player.actionAtItemEnd = AVPlayerActionAtItemEnd.None
     }
     

@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 import AlamofireImage
 
-public class Version: NSObject, Mappable, CustomDebugStringConvertible {
+public class Version: NSObject, Mappable {
     public private(set) var latest: String?
     
     // debug printable

@@ -10,7 +10,7 @@ import Foundation
 import ObjectMapper
 import AlamofireImage
 
-public class Confirmation: NSObject, Mappable, CustomDebugStringConvertible {
+public class Confirmation: NSObject, Mappable {
     public private(set) var patterns: [Pattern]?
     
     // debug printable

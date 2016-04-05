@@ -12,7 +12,7 @@ import Alamofire
 import AlamofireImage
 import CleanroomLogger
 
-public class Camera: NSObject, Mappable, CustomDebugStringConvertible {
+public class Camera: NSObject, Mappable {
     public private(set) var title: String?
     private var imageURL: NSURL?
     private var pageURL: NSURL?
